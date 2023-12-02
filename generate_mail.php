@@ -18,4 +18,5 @@ $bodyRand = rand(0, count($sentences) - 1);
 $bodySentences = array_splice($sentences, $bodyRand, 3);
 $body = implode(' ', $bodySentences);
 
+header('Content-Type: application/json');
 echo json_encode(['subject' => $subject, 'body' => $body]);
