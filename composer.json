@@ -1,0 +1,10 @@
+{
+    "name": "elementfani/mail-generator",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Elementfani\\MailGenerator\\": "src/"
+        }
+    },
+    "require": {}
+}
