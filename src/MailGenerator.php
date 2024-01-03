@@ -4,7 +4,7 @@ namespace Elementfani\MailGenerator;
 
 class MailGenerator
 {
-    private string $txtSourceFile;
+    private $txtSourceFile;
 
     public function __construct(string $txtSourceFile)
     {
