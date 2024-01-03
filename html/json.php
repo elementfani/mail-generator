@@ -10,13 +10,6 @@ $mailGenerator = new MailGenerator($config['txtSourceFile']);
 $jsContent = file_get_contents($config['jsSourceFile']);
 
 $mail = $mailGenerator->generate();
-$jsContent = strtr(
-    $jsContent,
-    [
-        '{SUBJECT}' => $mail['subject'],
-        '{BODY}' => $mail['body'],
-    ]
-);
 
-header('Content-Type: application/javascript');
-echo $jsContent;
+header('Content-Type: application/json');
+echo json_encode($mail);
