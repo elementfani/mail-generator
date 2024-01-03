@@ -23,7 +23,7 @@ $mail = $mailGenerator->generate();
 <div class="container mt-3">
     <div class="mb-3">
         <label for="subject" class="form-label">Subject</label>
-        <input class="form-control form-control-lg" type="text" readonly id="subject" value="<?= $mail['subject'] ?>">
+        <input class="form-control form-control-lg" type="text" readonly id="subject" value="<?= $mail['subject'] ?>" autofocus>
     </div>
     <div class="mb-3">
         <label for="body" class="form-label">Body</label>
